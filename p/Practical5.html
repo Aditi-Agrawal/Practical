@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-5</title>
+    <style>
+        *{
+            background-color: lightgrey;
+            text-align: center;
+        }
+        h2{
+            color:white;
+            text-align: center;
+        }
+        h4{
+            color:red;
+        }
+        img.map,
+        map area{
+            outline: none;
+        }
+    </style>
 </head>
 <body>
+    <img src="Image/menu.png" alt="menu" style="width:1406px;height:95px;" usemap="#map1">
+    <map name = "map1">
+        <area shape="rect" coords="12,13,155,83" alt="menu" href="..\index.html" target="_blank">
+        <area shape="rect" coords="155,15,388,84" alt="Practical-1" href="Practical1.html" target="_blank">
+        <area shape="rect" coords="386,13,645,85" alt="Practical-2" href="Practical2.html" target="_blank">
+        <area shape="rect" coords="645,15,894,85" alt="Practical-3" href="Practical3.html" target="_blank">
+        <area shape="rect" coords="893,13,1145,85" alt="Practical-4" href="Practical4.html" target="_blank">
+        <area shape="rect" coords="1146,14,1394,85" alt="Practical-5" href="Practical5.html" target="_self">
+    </map>
+    <h2>Introduction to Front-End Technologies</h2>
     <img src="Image/Logo.png" alt="Logos" usemap="#workmap">
     <map name = "workmap">
-        <area shape="rect" coords="23,7,215,206" alt="HTML5" href="Practical5-html.html">
-        <area shape="circle" coords="359,115,129" alt="HTML5" href="Practical5-css.html">
+        <area shape="rect" coords="23,7,215,206" alt="HTML5" href="Practical5-html.html" target="_blank">
+        <area shape="circle" coords="359,115,129" alt="CSS" href="Practical5-css.html" target="_blank">
+        <area shape="rect" coords="26,239,213,420" alt="JQuery" href="Practical5-jq.html" target="_blank">
+        <area shape="poly" coords="360,245,436,276,423,375,360,411,292,374,284,274" alt="Bootstrap" href="Practical5-boot.html" target="_blank">
     </map>
+    <h4>Click on any part of logo to know more about these technologies.</h4>
 </body>
 </html>
