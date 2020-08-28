@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive Footer</title>
+    <style>
+        *{
+            background-color: #202020;
+            color:whitesmoke;
+            margin:20px;
+            box-sizing: border-box;
+            padding:0px;
+            margin:auto 0px;
+        }
+        .footer{
+        padding:60px;
+        height:180px;
+        width:25%;
+        float:left;
+        }
+        .footer p{
+            font-size:16px;
+        }
+        .link{
+            padding:60px;
+            list-style-type:none;
+            height:180px;
+            width:20%;
+            float:left;
+        }
+        .link li a{
+            text-decoration:none;
+            font-size:16px;
+        }
+        .link a:hover{
+            color:yellow;
+        }
+        
+        .container::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .space{
+            height:40px;
+            width:100%;
+        }
+        .register{
+            display:flex;
+            flex-direction:center;
+            justify-content: center;
+            font-size:30px;
+        }
+        .register a{
+            height:60px;
+            width:150px;
+            background-color: red;
+            border-radius:25px;
+            text-decoration: none;
+            display:flex;
+            justify-content: center;
+            line-height:60px;
+            margin:30px;
+            font-size:20px;
+        }
+        .register a:hover{
+            color:black;
+        }
+        .icon{
+            height:200px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon a{
+            height:70px;
+            width:70px;
+            border-radius:50%;
+            background-color:black;
+            text-align:center;   /*horizontally centered*/
+            margin:20px;
+            box-shadow:1px 4px 2px 2px #454545;
+        }
+        
+        .icon a i{
+            line-height:70px;
+            background-color:black;
+            transition: .3s;
+        }
+        a:hover i{
+            transform:scale(2.1);
+        }
+        .bottom{
+            height:60px;
+            background-color: #101010;
+            display:flex;
+            justify-content:center;
+            font-size:25px;
+        }
+        .bottom p, .bottom i{
+            background-color:#101010;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="space"></div>
+    <div class="container">
+        <div class="footer">
+            <h2>FOOTER CONTENT</h2>
+            <br/>
+            <p>Here you can use rows and columns to organise your footer content Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, veritatis.</p>
+        </div>
+            <ul class="link" id="link1">
+                <h2>LINKS</h2>
+                <br/>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+            <ul class="link" id="link2">
+                <h2>LINKS</h2>
+                <br/>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+            <ul class="link" id="link3">
+                <h2>LINKS</h2>
+                <br/>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </div>  
+    <div class="space"></div>
+    <div class="space"></div>  
+    <hr style="height:2px;border-width:0;background-color:black">
+    <div class="space"></div>
+    <div class="register">
+        <P>Register for free</P>
+        <a href="#">SIGN UP!</a>
+    </div>
+    <div class="space"></div>
+    <hr style="height:2px;border-width:0;background-color:black">
+    <div class="icon">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+    </div>
+    <hr style="height:2px;border-width:0;background-color:black">
+    <div class="bottom">
+        <p><i class="fa fa-copyright"></i>2020 Copyright: MDBootstrap.com</p>
+    </div>
+</body>
+</html>
