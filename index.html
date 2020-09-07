@@ -3,40 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to HTML</title>
+    <title>Index Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        table{
+            border:3px solid #34495E;
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius:5px;
+            border-spacing: 0; 
+            margin:20px auto;
+        }
+        tbody th, td, tr{
+            padding:10px;
+            height:30px;
+            border-bottom:3px solid #adb5bd;
+        }
+        thead tr th{
+            width:100%;
+            height:50px;
+            text-align:center;
+            line-height:50px;
+            background-color: #34495E;
+            margin:0;
+            font-size:20px;
+            color:whitesmoke;
+        }
+        th{
+            text-align:left;
+        }
+        #link{
+            text-decoration:none;
+            color:gray;
+        }
+        tr:hover{
+            background-color:#e5e5e5;
+        }
+        #edit, #delete{
+            color:gray;
+            font-size:20px;
+        }
+        #edit{
+            margin-right: 15px;
+        }
+        #edit:hover{
+            color:blue;
+        }
+        #delete:hover{
+            color:red;
+        }
+        #chk{
+            color:green;
+        }
+        #unchk{
+            color:#a4161a;
+        }
+        #content th{
+            border-bottom:4px solid #adb5bd;
+            height:25px;
+        }
+        #last td{
+            border-bottom:0px;
+        }
+    </style>
 </head>
-<body bgcolor="	bisque">
-    <h1><FONT COLOR="green">Welcome to Fullstack Course</FONT></h1>
-    <h2>About Course</h2>
-    <p><b>Front-end web development is everything involved in programming the user interface of a web application.
-        Typically it refers to the Hypertext Markup Language(HTML),Cascading Style Sheets (CSS) and JavaScript 
-        portion of web site production as opposed to the databaseor server-side programming.It encompases 
-        everything from building a simple page of HTML text to creating complex, responsive HTML5 websites 
-        designed to be accessed via various different browsers, devices and screen sizes.
-    </b></p>
-    <h1><FONT COLOR = "green">List of Practicals</FONT></h1>
-    <ol>
-        <LI>Create a Web page including HTML basic skelton using Offline 
-            HTML editor and Online Sandbox Environment.
-            <a href="p/Practical1.html">
-                Practical-1</a></LI>
-        <LI>Live your First Web-Page on Git-Hub. 
-            <a href="p/Practical2.html">
-                Practical-2</a></LI>
-        <LI>Create a Web page showing using character Entities and span Tag.
-             <a href="p/Practical3.html">
-                Practical-3</a></LI>
-        <LI>Create a website having list of all practical and their individual 
-            practical Page Links. 
-            <a href="p/Practical4.html">
-                Practical-4</a></LI>
-        <LI>Create a web page showing Image Map Effect on logo of different technologies.<a href="p/Practical5.html">Practical-5</a></LI>
-        <LI>Create following layout using css Layout properties.<a href="p/Practical6.html">Practical-6</a></LI>
-        <LI>Create a web page Layout using div tags.<a href="p/Practical7.html">Practical-7</a></LI>
-        <LI>Create a Web Page having Fixed Navigation Bar with the given content.<a href="p/Practical8.html">Practical-8</a></LI>
-        <LI>Create a Responsive Web Layout with Responsive Navigation Bar.<a href="p/Practical9.html">Practical-9</a></LI>
-        <LI></LI>
-    </ol>
-    
+<body>
+    <table width="1100">
+        <thead>
+            <tr><th colspan="5">Fullstack Live Practical Book</th></tr>
+        </thead>
+        <tbody>
+            <tr id="content">
+                <th>#</th>
+                <th width="500">Practical Name</th>
+                <th width="200">Link</th>
+                <th width="200">Status</th>
+                <th width="80">Tools</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Create a Web page including HTML basic skelton using Offline HTML Editor and online Sandbox Environment</td>
+                <td><a href="p/Practical1.html" id="link" target="_blank">Practical-1</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Live your First Web-Page on Git-Hub.</td>
+                <td><a href="p/Practical2.html" id="link" target="_blank">Practical-2</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Create a Web page showing using character Entities and span Tag.</td>
+                <td><a href="p/Practical3.html" id="link" target="_blank">Practical-3</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Create a website having list of all practical and their individual practical Page Links.</td>
+                <td><a href="p/Practical4.html" id="link" target="_blank">Practical-4</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Create a web page showing Image Map Effect on logo of different technologies.</td>
+                <td><a href="p/Practical5.html" id="link" target="_blank">Practical-5</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Create following layout using css Layout properties.</td>
+                <td><a href="p/Practical6.html" id="link" target="_blank">Practical-6</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Create a web page Layout using div tags.</td>
+                <td><a href="p/Practical7.html" id="link" target="_blank">Practical-7</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Create a Web Page having Fixed Navigation Bar with the given content.</td>
+                <td><a href="p/Practical8.html" id="link" target="_blank">Practical-8</a></td>
+                <td id="chk">Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+                <td><a href="p/Practical9.html" id="link" target="_blank">Practical-9</a></td>
+                <td id="unchk">Un-Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Create a Responsive Side-Bar Navigation Menu.</td>
+                <td><a href="p/Practical10.html" id="link" target="_blank">Practical-10</a></td>
+                <td id="unchk">Un-Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Create a Table that represent Live Practical Book Records.</td>
+                <td><a href="p/Practical11.html" id="link" target="_blank">Practical-11</a></td>
+                <td id="unchk">Un-Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+            <tr id="last">
+                <td>12</td>
+                <td>Create a Custom Price Table Template.</td>
+                <td><a href="p/Practical12.html" id="link" target="_blank">Practical-12</a></td>
+                <td id="unchk">Un-Checked</td>
+                <td><i id="edit" title="edit" class="fa fa-pencil"></i><i id="delete" title="delete" class="fa fa-trash"></i></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
