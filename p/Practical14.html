@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: lightgrey;
+            direction: flex;
+            flex-direction: column;
+        }
+        header h1{
+            text-transform: uppercase;
+            color:red;
+            font-size:80px;
+            text-align:center;
+            margin-top:80px;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+        .form-template1{
+            width:300px;
+            height: 350px;
+            background-color: #fff;
+            margin-top:50px;
+            margin:20px;
+        }
+        .form-header-t1{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, orange,red);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form-header-t1 h1{
+            color:white;
+            font-size:20px;
+            padding-top: 10px;
+        }
+        .form-header-t1 .social i{
+            color:white;
+            padding:20px 10px;
+        }
+        .form-container-t1{
+            padding: 20px;
+        }
+        input[type=email]{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 10px 0px;
+            width:100%;
+        }
+        input[type=password]{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 10px 0px;
+            width:100%;
+        }
+        .form-template1 input:hover{
+            border-bottom:2px solid #3498db;
+        }
+        .form-container-t1 p{
+            font-size: 12px;
+            color:grey;
+            padding: 20px 0;
+            text-align: right;
+        }
+        .form-container-t1 p b{
+            color: black;
+        }
+        input[type=submit]{
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color:#353535;
+            color:white;
+            margin-top:30px;
+        }
+        .form-container-t1 p#p2{
+            display: inline-block;
+            margin-left:15px;
+        }
+
+
+
+        /*Form Template-2*/
+        .form-template2{
+            width:300px;
+            height: 350px;
+            background-color: #fff;
+            margin-top:50px;
+            margin:20px;
+        }
+        .form-header-t2{
+            background-color: #fff;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form-header-t2 h1{
+            color:deeppink;
+            font-size:20px;
+            padding-top: 10px;
+        }
+        .form-container-t2{
+            padding: 20px;
+        }
+        input[type=email]{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 10px 0px;
+            width:100%;
+        }
+        input[type=password]{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 10px 0px;
+            width:100%;
+        }
+        input[type=checkbox]{
+            margin:25px 0;
+        }
+        .form-container-t2 p{
+            display:inline-block;
+            font-size: 12px;
+            color:grey;
+        }
+        .form-container-t2 p b{
+            color: #3498db;
+        }
+        .form-container-t2 input[type=submit]{
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color:deeppink;
+            color:white;
+            margin-top:30px;
+        }
+        .form-container-t2 p#p3{
+            display: inline-block;
+            margin-left:20px;
+        }
+        .form-footer-t2 {
+            background-color: #778899;
+            height:75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        .form-footer-t2 .social i{
+            padding:20px 10px;
+        }
+        .form-template2 input:hover{
+            border-bottom:2px solid #3498db;
+        }
+
+        /*Form Template3 */
+        .form-template3{
+            width:300px;
+            height: 350px;
+            background-color: #fff;
+            margin-top:50px;
+            margin:20px;
+        }
+        .form-header-t3{
+            background-color: #fff;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form-header-t3 h1{
+            color:black;
+            font-size:20px;
+            padding: 10px;
+        }
+        .form-container-t3{
+            padding: 20px;
+        }
+        input[type=email]{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 10px 0px;
+            width:100%;
+        }
+        input[type=password]{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            padding: 10px 0px;
+            width:100%;
+        }
+        .form-container-t3 p{
+            font-size: 12px;
+            color:#3498db;
+            padding: 20px 0;
+            text-align: right;
+        }
+        
+        .form-container-t3 input[type=submit]{
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            display:block;
+            width:100%;
+            background:linear-gradient(to right,skyblue,blue);
+            color:white;
+            margin-top:0px;
+        }
+        .form-container-t3 p#p4{
+            margin-top:-5px;
+            color:black;
+            text-align: center;
+        }
+        .form-footer-t3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-footer-t3 .social i{
+            color:#3498db;
+            font-size: 20px;
+            width:70px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px 10px;
+            box-shadow: 2px 2px 5px #3498db;
+            margin-top: -10px;
+        }
+        .form-template3 input:hover{
+            border-bottom:2px solid #3498db;
+        }
+    </style>
+</head>
+<body>   
+        <header><h1>FORM TEMPLATES</h1></header>
+        <div class="main-container">
+            <!-- Form Template-1 -->
+            <div class="form-template1">
+                <div class="form-header-t1">
+                    <h1>LOGIN</h1>
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                    </div>
+                </div>
+                <div class="form-container-t1">
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                    </div>
+                    <div>
+                        <input type="password" name="pwd" id="pwd" placeholder="Your password">
+                    </div>
+                    <p>Forgot <b>Password?</b></p>
+                    <input type="submit" value="LOGIN">
+                    <p id="p2">Don't have account?<b>Sign Up</b></p>
+                </div>
+                <div class="form-footer-t1"></div>
+            </div>
+
+            <!-- Form Template-2 -->
+            <div class="form-template2">
+                <div class="form-header-t2">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="form-container-t2">
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                    </div>
+                    <div>
+                        <input type="password" name="pwd" id="pwd" placeholder="Your password">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chk" id="chk">
+                        <p>Accept the<b>Term and Conditions</b></p>
+                    </div>
+                    <input type="submit" value="SIGN UP">
+                    <p id="p3">Have an account?<b>Log in</b></p>
+                </div>
+                <div class="form-footer-t2">
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Template-3 -->
+            <div class="form-template3">
+                <div class="form-header-t3">
+                    <h1>Sign In</h1>
+                </div>
+                <div class="form-container-t3">
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                    </div>
+                    <div>
+                        <input type="password" name="pwd" id="pwd" placeholder="Your password">
+                    </div>
+                    <p>Forgot Password?</p>
+                    <input type="submit" value="SIGN IN">
+                    <p id="p4">or Sign in with:</p>
+                </div>
+                <div class="form-footer-t3">
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                    </div>
+                </div>    
+            </div>
+
+        </div>
+</body>
+</html>
