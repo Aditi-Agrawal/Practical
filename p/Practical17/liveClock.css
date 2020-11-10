@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-family:'Quicksand',sans-serif;
+    color:black;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#time{
+    font-size: 8rem;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+h2{
+    margin-bottom:1rem;
+    font-size:48px;
+    opacity:0.5;
+}
