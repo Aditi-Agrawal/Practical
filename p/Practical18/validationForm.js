@@ -80,5 +80,5 @@ function isEmailValid(email){
 }
 
 function isUsernameValid(username){
-    return /(^[a-zA-Z0-9]{3,10}$)/.test(username);
+    return /(^[a-z0-9]{3,10}$)/.test(username);
 }
